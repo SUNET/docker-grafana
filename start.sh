@@ -33,7 +33,7 @@ if [ ! -d "$GF_PATHS_PLUGINS" ]; then
 fi
 
 # Something is severely FUBAR with how Grafana groks configs; defaults overriding configuration file? OK, let's purge the default
-cat /etc/grafana/grafana.ini >> /usr/share/grafana/conf/defaults.ini
+# cat /etc/grafana/grafana.ini >> /usr/share/grafana/conf/defaults.ini
  
 exec grafana-server                                         \
   --homepath="$GF_PATHS_HOME"                               \
