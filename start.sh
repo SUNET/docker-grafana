@@ -32,6 +32,8 @@ if [ ! -d "$GF_PATHS_PLUGINS" ]; then
     mkdir "$GF_PATHS_PLUGINS"
 fi
 
+# Something is severely FUBAR with how Grafana groks configs; defaults overriding configuration file? OK, let's purge the default
+echo "" > /usr/share/grafana/conf/defaults.ini
  
 exec grafana-server                                         \
   --homepath="$GF_PATHS_HOME"                               \
