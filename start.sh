@@ -2,7 +2,7 @@
 
 PERMISSIONS_OK=0
 
-GF_PATHS_CONFIG="/etc/grafana"
+GF_PATHS_CONFIG="/etc/grafana/grafana.ini"
 GF_PATHS_DATA="/var/lib/grafana"
 GF_PATHS_HOME="/usr/share/grafana"
 GF_PATHS_PLUGINS="/var/lib/grafana/plugins"
