@@ -7,7 +7,7 @@ GF_PATHS_DATA="/var/lib/grafana"
 GF_PATHS_HOME="/usr/share/grafana"
 GF_PATHS_PLUGINS="/var/lib/grafana/plugins"
 GF_PATHS_PROVISIONING="/etc/grafana/provisioning"
-
+GF_PATHS_LOGS="/var/log/grafana"
 
 if [ ! -r "$GF_PATHS_CONFIG" ]; then
     echo "GF_PATHS_CONFIG='$GF_PATHS_CONFIG' is not readable."
