@@ -1,0 +1,9 @@
+---
+triggers:
+  cron: "@daily"
+
+extra_jobs:
+  - name: docker-grafana 
+    builders:
+      - docker
+    docker_name: docker-grafana
