@@ -45,4 +45,3 @@ exec grafana-server                                         \
   cfg:default.paths.logs="$GF_PATHS_LOGS"                   \
   cfg:default.paths.plugins="$GF_PATHS_PLUGINS"             \
   cfg:default.paths.provisioning="$GF_PATHS_PROVISIONING"
-
