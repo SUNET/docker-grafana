@@ -32,11 +32,12 @@ if [ ! -d "$GF_PATHS_PLUGINS" ]; then
     mkdir "$GF_PATHS_PLUGINS"
 fi
 
+# Sigh, must be blind. Missed the [] in the config so that's why it was not parsed correctly. :( Annoying it was not reported with DEBUG on though...
 # Something is severely FUBAR with how Grafana groks configs; defaults overriding configuration file? OK, let's purge the default
 # cat /etc/grafana/grafana.ini >> /usr/share/grafana/conf/defaults.ini
-cp /etc/grafana/grafana.ini /etc/grafana/grafana.tmp
-cat  /usr/share/grafana/conf/defaults.ini >> /etc/grafana/grafana.tmp
-mv /etc/grafana/grafana.tmp /usr/share/grafana/conf/defaults.ini
+#cp /etc/grafana/grafana.ini /etc/grafana/grafana.tmp
+#cat  /usr/share/grafana/conf/defaults.ini >> /etc/grafana/grafana.tmp
+#mv /etc/grafana/grafana.tmp /usr/share/grafana/conf/defaults.ini
 
  
 exec grafana-server                                         \

@@ -6,7 +6,6 @@ RUN dpkg -i grafana_7.3.5_amd64.deb
 
 ADD start.sh /
 
-EXPOSE 3000 
 EXPOSE 443
 
 ENTRYPOINT "/start.sh"
