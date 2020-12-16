@@ -34,6 +34,10 @@ fi
 
 # Something is severely FUBAR with how Grafana groks configs; defaults overriding configuration file? OK, let's purge the default
 # cat /etc/grafana/grafana.ini >> /usr/share/grafana/conf/defaults.ini
+cp /etc/grafana/grafana.ini /etc/grafana/grafana.tmp
+cat  /usr/share/grafana/conf/defaults.ini >> /etc/grafana/grafana.tmp
+mv /etc/grafana/grafana.tmp /usr/share/grafana/conf/defaults.ini
+
  
 exec grafana-server                                         \
   --homepath="$GF_PATHS_HOME"                               \
