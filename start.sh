@@ -1,3 +1,5 @@
+# FIXME: For some reason environment is not carried to the container executing this script so ENV has to be sent from Cosmos as well.
+#
 #!/bin/bash -e
 
 PERMISSIONS_OK=0
