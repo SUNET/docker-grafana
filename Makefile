@@ -1,4 +1,4 @@
-VERSION=7.3.5
+VERSION=7.5.11
 NAME=docker-grafana
 
 all: build push
