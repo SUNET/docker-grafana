@@ -1,4 +1,4 @@
-FROM ubuntu:20.10
+FROM ubuntu:21.04
 
 RUN apt-get update && apt-get install -y --no-install-recommends wget adduser libfontconfig1 ca-certificates
 RUN wget -q https://dl.grafana.com/oss/release/grafana_7.5.12_amd64.deb
